@@ -1,0 +1,270 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke ;
+  }
+  /*estilos titulo princ*/
+  header{
+    text-align: center;
+    background-color: #A6A6A6 ;
+    color: rgb(5, 5, 5);
+    padding: 3px;
+    letter-spacing: 7px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+  /*estilo logo header*/
+ header img{
+    width: 15%;
+ }
+ header .titulo{
+    margin-bottom: 20px;
+ }
+  /* estilos links de navegacion*/
+
+  header .nav-underline{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+  }
+  /*
+  header  nav ul{
+   color: whitesmoke;
+   letter-spacing: 1px;
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   padding-right: 20px;
+  }
+   header nav ul li a{
+    color: rgb(239, 12, 12);
+  } 
+  
+  */
+
+  /*estilos del menu princp*/
+  main{
+    padding-top: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+  }
+  main .textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    margin: 10px;
+    filter: drop-shadow(15px 15px 10px);
+  }
+  main .imagenes .foto-4{
+    display: none;
+  }
+  main .boton a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: rgb(2, 2, 2);
+    background-color:#A6A6A6 ;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(43, 42, 42);
+  }
+  main .boton{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+  }
+
+
+
+  /*
+  main h2{
+    color: rgb(243, 241, 241);
+    font-family: "Playfair Display", serif;
+  }
+  
+  
+  main p{
+    color: rgb(245, 244, 244);
+    font-weight: bold;
+  }
+  
+  /*estilos pie de pagina*/
+  footer{
+    color: rgb(6, 6, 6);
+    text-align: center;
+    background-color: #A6A6A6;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Estilos para tablet */
+@media (max-width: 1024px) {
+  /* Header ajustes */
+  header {
+      padding: 40px 20px;
+  }
+
+  header nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  /* Centrado de los textos */
+  main .textos {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  main .textos h2 {
+      font-size: 22px;
+      line-height: 1.3;
+  }
+
+  /* Estilo de las imágenes */
+  main .imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px;
+    width: 80%; /* Ajusta el ancho al 80% */
+    margin: 0 auto; /* Centra el contenedor de las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de sus celdas */
+  }
+
+  main .imagenes div {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(28, 28, 28, 0.2);
+  }
+
+  main .imagenes img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+
+  main .imagenes .foto-4 {
+    display: block; /* Asegura que se muestre en tablet */
+  }
+  main .boton a {
+      font-size: 18px;
+      padding: 15px 40px;
+  }
+  main .boton{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /* Pie de página */
+  footer {
+      padding: 30px;
+  }
+}
+  /*estilos para mobile*/
+
+  @media (max-width: 768px){
+    header img {
+      display: none;
+    }
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+    header .nav-underline{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 1px;
+    }
+
+    /*
+    
+        header nav ul{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    */
+
+    main .textos{
+      text-align: center;
+    }
+    main .textos h2 span{
+      display: block;
+
+    }
+    main .imagenes .foto-1 {
+      display: none;
+    }
+    main .imagenes .foto-3{
+      display: none;
+    }
+
+  }      
+/* estilos menu.html*/
+main .textos-menu {
+  color: rgb(5, 5, 5);
+  text-align: center;
+  padding: 20px;
+}
+main .textos-menu h2{
+  padding-bottom: 20px;
+}
+main .textos-menu span{
+  display: block;
+  padding: 4px;
+  color: brown;
+  font-style: italic;
+}
+main .imagen-menu{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+main .textos-menu p span{
+  padding: 10px;
+  text-align: center;
+}
+/*css opiniones.html*/
+main .titulo-op{
+  text-align: center;
+  font-style: oblique;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .form-op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+main .boton-op{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
