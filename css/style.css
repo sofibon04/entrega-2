@@ -145,11 +145,11 @@ body{
   /* Estilo de las imágenes */
   main .imagenes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
-    width: 80%; /* Ajusta el ancho al 80% */
-    margin: 0 auto; /* Centra el contenedor de las imágenes */
-    justify-items: center; /* Centra las imágenes dentro de sus celdas */
+    width: 80%; 
+    margin: 0 auto; 
+    justify-items: center; 
   }
 
   main .imagenes div {
